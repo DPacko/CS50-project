@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ESL Teacher's Resources</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="home.css">
+
+    <!-- fancy navbar from https://bootsnipp.com/snippets/featured/fancy-navbar-login-sign-in-form-->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <body>
+
+        <nav class="navbar navbar-default navbar-fixed-top" style="background-color:darkgray;">
+            <div class="container">
+                <!-- <a class="navbar-brand" href="#">
+                    <img src="http://atodomomento.com/wp-content/uploads/2017/10/playboy-696x329.jpg" width="80" height="50" alt="">
+                </a> -->
+                <!-- <form class="formy form-inline my-2 my-lg-0" align="left">
+                    <input class="form-control mr-sm-2" type="username" placeholder="Username" aria-label="Username">
+                    <input class="form-control mr-sm-2" type="password" placeholder="Password" aria-label="Password">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Log in</button>
+                </form> -->
+                <!-- <a href="#" class="btn btn-warning btn-sm active" role="button" aria-pressed="true">Teacher's Lounge</a> -->
+                <!-- <a href="#" class="btn btn-success btn-sm active" role="button" aria-pressed="true">Resources</a> -->
+                <!-- <a href="#" class="btn btn-info btn-sm active" role="button" aria-pressed="true">My Lessons</a> -->
+
+                <ul class="nav navbar-nav navbar-left">
+                    <!-- <li>
+                        <p class="navbar-text col" style="color:black">Already have an account?</p>
+                    </li> -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle color" data-toggle="dropdown" style="color: black">
+                            <h2>
+                                <b style="color:black">Login</b>
+                                <span class="caret"></span>
+                            </h2>
+                        </a>
+                        <ul id="login-dp" class="dropdown-menu">
+                            <li>
+                                <div class="row" style="background-color:white">
+                                    <div class="col-md-12">
+                                        <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                                            <div class="form-group">
+                                                <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="sr-only" for="exampleInputPassword2">Password</label>
+                                                <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                                <!-- used for forgetting passwords -->
+                                                <!-- <div class="help-block text-right">
+                                                    <a href="">Forget the password ?</a>
+                                                </div> -->
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"> keep me logged-in
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="bottom text-center">
+                                        New?
+                                        <a href="#">
+                                            <b>Sign up for free access!</b>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+            </div>
+        </nav>
+        <div class="jumbotron text-center">
+            <h1>Accessible Lesson Plans</h1>
+        </div>
+
+
+        <div class="container">
+            <h2>
+                <b>About</b>
+                </h1>
+                <p>This site is useful for anyone who wants fun and creative lessons without spending hours planning. Here is
+                    a collection of the most widely used lessons around the world. All levels and ages. No need to reinvent
+                    the wheel when there are lesson plans available online.
+                </p>
+                <p>Know of lessons / resources that are helpful but not on here? Feel free (it is much appreciate!) to send
+                    us a message and we'll add it! Thanks and enjoy!
+                </p>
+        </div>
+        <!-- comment section -->
+        <div class="container">
+
+            <h1 text-align:>Share Lessons or Thoughts below</h1>
+            <!-------Wrap------------>
+            <div id="wrap">
+                <!-- <div id="main">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h3 class="heading">Comments and Responses</h3>
+                        </div>
+                        <div class="col-md-7">
+                            <div id="upper_blank"></div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!------------Form Start---------->
+
+                <div id='form'>
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <form action="" method="POST" id="commentform">
+
+                                <div id="comment-name" class="form-row">
+                                    <input type="text" placeholder="Name (required)" name="dname" id="name">
+                                </div>
+                                <div id="comment-email" class="form-row">
+                                    <input type="text" placeholder="Mail (required)" name="demail" id="email">
+                                </div>
+                                <div id="comment-url" class="form-row">
+                                    <input type="text" placeholder="Website (optional)" name="url" id="url">
+                                </div>
+                                <div id="comment-message" class="form-row">
+                                    <textarea name="comment" placeholder="Please describe the website, student levels, ages, anything you'd like to share :)"
+                                        id="comment"></textarea>
+                                </div>
+                                <a href="#">
+                                    <input type="submit" name="dsubmit" id="commentSubmit" value="Send">
+                                </a>
+                                
+                            </form>
+                            <!-- <iframe src='/contact/contactform.php' frameborder='0' width='100%' height='600' allowtransparency='true'></iframe> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3>Column 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Column 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Column 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                </div>
+            </div>
+        </div> -->
+
+
+
+
+
+    </body>
+
+</body>
+
+</html>
